@@ -1,6 +1,8 @@
 .container {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  max-width: 410px;
+  min-height: 90vh;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #005eff;
 }

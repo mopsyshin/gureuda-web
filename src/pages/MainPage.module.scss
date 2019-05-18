@@ -1,0 +1,16 @@
+.home-container {
+  .bottom-background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .circle {
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+      transform: translateY(200px) scale(2.5);
+      background-color: #ffffff;
+    }
+  } 
+}

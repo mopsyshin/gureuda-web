@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import { TodoList, TodoListCopy } from 'pages';
+import { MainPage } from 'pages';
 import styles from './App.module.scss';
 import classNames from 'classnames/bind';
 
@@ -10,8 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className={cx('container')}>
-        <Route exact path="/" component={TodoList}/>
-        <Route path="/copy" component={TodoListCopy}/>
+        <Route exact path="/" component={MainPage}/>
       </div>
     );
   }

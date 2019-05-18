@@ -1,0 +1,56 @@
+.gif-section {
+  position: absolute;
+  width: 100%;
+  bottom: 180px;
+  display: flex;
+  z-index: 15;
+  justify-content: center;
+}
+
+.main-body {
+  .message {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .actions {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    padding: 64px 24px;
+  }
+}
+.rolling-body {
+  .top-section {
+    position: absolute;
+    margin-top: 30px;
+    width: 100%;
+    z-index: 10;
+    .message {
+      text-align: center;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 600;
+      &.large {
+        font-size: 48px;
+      }
+    }
+  }
+  .bottom-section {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    padding: 64px 24px;
+  }
+}
+
+.counter {
+  font-size: 92px;
+  font-weight: 600;
+  color: #3b3f45;
+  text-align: center;
+}

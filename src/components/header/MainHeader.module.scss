@@ -1,0 +1,21 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  .item {
+    width: 100px;
+    text-align: center;
+    &.left {
+      img {
+        width: 32px;
+      }
+    }
+    &.center {
+      flex: 2;
+      img {
+        width: 112px;
+      }
+    }
+  }
+}
