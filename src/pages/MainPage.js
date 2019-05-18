@@ -43,7 +43,7 @@ export default class MainPage extends Component {
     }
     return (
       <div className={cx('home-container')}>
-        <MainHeader/>
+        <MainHeader status={this.state.status} changeStatus={this.changeStatus}/>
         {status()}
         <div className={cx('bottom-background')}>
           <div className={cx('circle')}></div>

@@ -1,7 +1,7 @@
 .gif-section {
   position: absolute;
   width: 100%;
-  bottom: 180px;
+  bottom: 200px;
   display: flex;
   z-index: 15;
   justify-content: center;
@@ -25,8 +25,7 @@
 }
 .rolling-body {
   .top-section {
-    position: absolute;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
     z-index: 10;
     .message {
@@ -35,9 +34,12 @@
       font-size: 24px;
       font-weight: 600;
       &.large {
-        font-size: 48px;
+        font-size: 36px;
       }
     }
+  }
+  .dialog-section {
+    margin-top: 20px;
   }
   .bottom-section {
     position: absolute;
@@ -53,4 +55,22 @@
   font-weight: 600;
   color: #3b3f45;
   text-align: center;
+}
+
+.dialog-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .message-background {
+    background-color: #ffffff;
+    max-width: 240px;
+    border-radius: 8px;
+    padding: 8px 24px;
+    .message {
+      color: #3b3f45;
+    }
+  }
+  .tail {
+    transform: translateX(-60px);
+  }
 }

@@ -4,11 +4,12 @@
   align-items: center;
   height: 80px;
   .item {
-    width: 100px;
+    width: 48px;
     text-align: center;
     &.left {
+      padding: 0 24px;
       img {
-        width: 32px;
+        height: 28px;
       }
     }
     &.center {
