@@ -81,6 +81,7 @@ export default class RollingSection extends Component {
           this.setState({counter: count});
         } else if (count === 0) {
           this.setState({message: '떼꾸르...', currentState: 'measureStart'});
+          this.playVoice();
           clearInterval(timer);
           resolve();
         }
@@ -92,9 +93,6 @@ export default class RollingSection extends Component {
 
   init = async () => {
     this.setState({currentState: 'count', message: '준비', accumulate: 0, timer: 0});
-    setTimeout(() => {
-      this.playVoice();
-    }, 3000);
     await this.startCount();
     
     this.setEventListener();

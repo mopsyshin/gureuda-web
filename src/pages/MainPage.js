@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReadySection from 'components/sections/ReadySection';
 import RollingSection from 'components/sections/RollingSection';
 import TutorialSection from 'components/sections/TutorialSection';
+import RankingSection from 'components/sections/RankingSection';
 import MainHeader from 'components/header/MainHeader';
 import classnames from 'classnames/bind';
 import style from './MainPage.module.scss';
@@ -33,6 +34,10 @@ export default class MainPage extends Component {
           return (
             <TutorialSection/>
           )
+        case 'ranking':
+          return (
+            <RankingSection/>
+          )
         default:
           return (
             <div>
@@ -46,7 +51,7 @@ export default class MainPage extends Component {
         <MainHeader status={this.state.status} changeStatus={this.changeStatus}/>
         {status()}
         <div className={cx('bottom-background')}>
-          <div className={cx('circle')}></div>
+          <div className={cx('circle', {ranking: this.state.status === 'ranking'})}></div>
         </div>
       </div>
     )

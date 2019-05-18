@@ -5,12 +5,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: all 0.3s;
     .circle {
       width: 300px;
       height: 300px;
       border-radius: 150px;
       transform: translateY(200px) scale(2.5);
       background-color: #ffffff;
+      transition: all 0.3s;
+      &.ranking {
+        transform: translateY(-50px) scale(3);
+      }
     }
+    
   } 
 }
